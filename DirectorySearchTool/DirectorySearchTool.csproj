@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DirectorySearchTool.Application\DirectorySearchTool.Application.csproj" />
+    <ProjectReference Include="..\DirectorySearchTool.Infrasctructure\DirectorySearchTool.Infrasctructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
