@@ -58,15 +58,15 @@ namespace DirectorySearchTool.Application.Features.Members.Queries
 
         private string DeepSearch(int memberid,string term, IEnumerable<Friendship> leaf, string path)
         {
-            if (leaf.Count() == 0)
-                return path;
-            foreach (var item in leaf.SelectMany(s=>s.FriendshipTo))
-            {
-                if(item.FriendshipTo.Headings.Any(a=>a.Heading.ToLower() == term.ToLower()))
-                {
+            //if (leaf.Count() == 0)
+            //    return path;
+            //foreach (var item in leaf.SelectMany(s=>s.FriendshipTo))
+            //{
+            //    if(item.FriendshipTo.Headings.Any(a=>a.Heading.ToLower() == term.ToLower()))
+            //    {
 
-                }
-            }
+            //    }
+            //}
             return path;
         }
     }
